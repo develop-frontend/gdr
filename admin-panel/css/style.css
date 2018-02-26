@@ -105,6 +105,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-end;
     grid-area: owner;
     flex-grow: 1;
 }
@@ -211,21 +212,22 @@ nav {
     transition: all 0.3s ease-in-out;
 }
 
-.nav__menu>li>a>.svg-inline--fa {
+.nav__menu>li>a>.svg-inline--fa, .nav__site>a>.svg-inline--fa{
     -webkit-transition: transform 0.5s ease-in-out;
     -moz-transition: transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
 }
 
-.nav__menu>li>a:hover>.svg-inline--fa {
+.nav__menu>li>a:hover>.svg-inline--fa, .nav__site>a:hover>.svg-inline--fa {
     -webkit-transform: rotateY(360deg);
     -moz-transform: rotateY(360deg);
     transform: rotateY(360deg);
 }
 
-.svg-inline--fa {
-    width: 1.3em;
-    height: 1.5em;
+nav .nav__site .svg-inline--fa, nav .nav__menu .svg-inline--fa {
+    width: 1.4em;
+    height: 1.2em;
+    margin-bottom: 5px;
 }
 
 .nav__menu>li>a:hover {
@@ -247,9 +249,14 @@ aside {
 
 aside>div {padding: 10px;}
 
+aside>div a:hover{
+    text-decoration: underline;
+    color: #3a9e92;
+}
+
 aside>div>div {color: #acacac;}
 
-aside .svg-inline--fa {vertical-align: bottom;}
+aside .svg-inline--fa {vertical-align: middle;}
 
 aside>div:nth-child(even) {background: #f8f9fb;}
 
@@ -304,14 +311,14 @@ section {
 
 .fa-plus-circle{
     position: absolute;
-    top: 11px;
-    right: -18px;
+    top: 12px;
+    right: 0;
     cursor: pointer;
     color: #10bda9;
     -webkit-transition: color 0.3s ease-in-out;
     -moz-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
-    width: 2em!important;
+    width: 1em!important;
 }
 
 .c-day-week{

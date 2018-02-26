@@ -78,6 +78,7 @@
 
 .fa-caret-right, .fa-caret-left{
   width: 1.375em!important;
+  height: 1.4em;
 }
 
 .week{margin: 10px 0 20px;}
@@ -100,8 +101,8 @@
   font-size: 18px;
   color: #10bda9;
   letter-spacing: 2px;
-  /* position: relative;
-  top: -20px; */
+  position: relative;
+  top: -4px;
 }
 
 #calendar2 thead tr:nth-child(1) td:nth-child(1):hover,
