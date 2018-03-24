@@ -94,6 +94,7 @@
 #calendar2 thead tr:last-child {
   font-size: small;
   color: rgb(85, 85, 85);
+  height: 75px;
 }
 
 #calendar2 thead tr:nth-child(1) td:nth-child(2) {
@@ -147,3 +148,4 @@ td:empty{
   border: transparent!important;
   background-color: #fff!important;
 }
+
